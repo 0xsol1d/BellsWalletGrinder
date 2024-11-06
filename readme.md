@@ -1,4 +1,4 @@
-# Wallet Address Grinder
+# Bells Wallet Address Creator and Grinder
 
 This script generates Bellcoin wallet addresses and searches for specific patterns within them. It can generate individual wallet addresses or "grind" for wallet addresses that match certain patterns. You can specify different wallet types and search for patterns within the address using multiple filters.
 
