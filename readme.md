@@ -46,7 +46,7 @@ npm install --save-dev typescript ts-node
    After installing TypeScript and ts-node, you can run the script like so:
 
 ```bash
-npx ts-node src/createWallet.ts [your-parameters]
+npx ts-node createWallet.ts [your-parameters]
 ```
 
 **Note**: Using **Bun** is highly recommended for better performance and native TypeScript support.
@@ -76,7 +76,7 @@ If no `--grind` parameter is provided, the script will generate a single wallet 
 Example to generate a single wallet of type `p2wpkh`:
 
 ```bash
-bun src/createWallet.ts --type=p2wpkh
+bun createWallet.ts --type=p2wpkh
 ```
 
 This will create a wallet address with the `p2wpkh` address type and save the private key and address to a `.json` file.
@@ -88,7 +88,7 @@ To search for wallet addresses that match a specific pattern, use the `--grind` 
 Example to grind for 10 wallet addresses that **start** with `e` and **end** with `r`:
 
 ```bash
-bun src/createWallet.ts --grind=10 --starts-with=e --ends-with=r
+bun createWallet.ts --grind=10 --starts-with=e --ends-with=r
 ```
 
 This will generate 10 wallets and check if their address starts with `e` and ends with `r`. Once a match is found, it will save the wallet to a `.json` file.
@@ -105,19 +105,19 @@ This will generate 10 wallets and check if their address starts with `e` and end
 1. **Generate a single wallet of type `p2pkh`**:
 
 ```bash
-bun src/createWallet.ts --type=p2pkh
+bun createWallet.ts --type=p2pkh
 ```
 
 2. **Grind for 10 wallets with address starting with `test` and ending with `end`**:
 
 ```bash
-bun src/createWallet.ts --grind=10 --starts-with=test --ends-with=end
+bun createWallet.ts --grind=10 --starts-with=test --ends-with=end
 ```
 
 3. **Grind for 5 wallets with address starting with `bel1q` and ending with `xyz`**:
 
 ```bash
-bun src/createWallet.ts --grind=5 --starts-with=bel1q --ends-with=xyz
+bun createWallet.ts --grind=5 --starts-with=bel1q --ends-with=xyz
 ```
 
 ## Output
